@@ -2,96 +2,95 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-black via-gray-900 to-black text-gray-400 pt-16 pb-10 px-6 border-t border-white/10">
+    <footer className="bg-black text-gray-300 pt-16 pb-10 px-6 border-t border-white/10">
       
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
-        
+
         {/* Brand */}
         <div>
-          <h2 className="text-2xl font-extrabold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent mb-4">
-            RideNow
+          <h2 className="text-2xl font-extrabold mb-4
+                         bg-gradient-to-r from-orange-400 to-orange-600
+                         bg-clip-text text-transparent">
+            SHIVSHAKTI AUTO RENTALS
           </h2>
-          <p className="leading-relaxed text-sm">
-            Premium and affordable vehicle rentals made simple.
-            Drive your journey with comfort and style.
+          <p className="text-sm leading-relaxed text-gray-400">
+            Trusted vehicle rental service in Vadodara.
+            Affordable cars & bikes available for daily rental.
           </p>
         </div>
 
         {/* Quick Links */}
         <div>
-          <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
+          <h3 className="text-orange-500 font-semibold mb-4 text-sm uppercase tracking-wider">
             Quick Links
           </h3>
           <ul className="space-y-3 text-sm">
             <li>
-              <Link to="/" className="hover:text-white transition-colors duration-300">
+              <Link to="/" className="hover:text-orange-500 transition">
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/vehicles" className="hover:text-white transition-colors duration-300">
+              <Link to="/vehicles" className="hover:text-orange-500 transition">
                 Vehicles
-              </Link>
-            </li>
-            <li>
-              <Link to="/login" className="hover:text-white transition-colors duration-300">
-                Login
               </Link>
             </li>
           </ul>
         </div>
 
-        {/* Contact */}
+        {/* Contact Info */}
         <div>
-          <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
-            Contact
+          <h3 className="text-orange-500 font-semibold mb-4 text-sm uppercase tracking-wider">
+            Contact Us
           </h3>
-          <div className="space-y-3 text-sm">
-            <p>
-              Email:{" "}
-              <a
-                href="mailto:support@ridenow.com"
-                className="hover:text-white transition"
-              >
-                support@ridenow.com
-              </a>
-            </p>
-            <p>
+          <div className="space-y-3 text-sm text-gray-400">
+            <p>Shop 02, Stanza Living</p>
+            <p>Beside HP Petrol Pump</p>
+            <p>Near Gayatri Mandir</p>
+            <p>Waghodiya Road, Vadodara</p>
+
+            <p className="mt-4">
               Phone:{" "}
               <a
-                href="tel:+919876543210"
-                className="hover:text-white transition"
+                href="tel:+916353392987"
+                className="hover:text-orange-500 transition"
               >
-                +91 9876543210
+                +91 63533 92987
               </a>
             </p>
-            <p>Pune, Maharashtra</p>
+
+            <p>
+              <a
+                href="https://wa.me/916353392987"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-green-400 transition"
+              >
+                Chat on WhatsApp
+              </a>
+            </p>
           </div>
         </div>
 
-        {/* Social */}
+        {/* Business Hours */}
         <div>
-          <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
-            Follow Us
+          <h3 className="text-orange-500 font-semibold mb-4 text-sm uppercase tracking-wider">
+            Working Hours
           </h3>
-          <div className="flex space-x-5 text-sm">
-            <a href="#" className="hover:text-white transition-transform hover:scale-110 duration-300">
-              Instagram
-            </a>
-            <a href="#" className="hover:text-white transition-transform hover:scale-110 duration-300">
-              Facebook
-            </a>
-            <a href="#" className="hover:text-white transition-transform hover:scale-110 duration-300">
-              Twitter
-            </a>
+          <div className="space-y-2 text-sm text-gray-400">
+            <p>Monday - Sunday</p>
+            <p>9:00 AM – 9:00 PM</p>
           </div>
         </div>
 
       </div>
 
-      {/* Bottom Section */}
+      {/* Bottom */}
       <div className="text-center text-gray-500 text-xs mt-14 pt-6 border-t border-white/10">
-        © {new Date().getFullYear()} RideNow. All rights reserved.
+        © {new Date().getFullYear()}{" "}
+        <span className="text-orange-500 font-medium">
+          Shivshakti Auto Rentals
+        </span>, Vadodara. All rights reserved.
       </div>
 
     </footer>

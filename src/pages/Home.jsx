@@ -26,44 +26,42 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 text-center px-6 max-w-4xl">
-          <h1 className="text-6xl md:text-8xl font-extrabold mb-6 leading-[1.1] tracking-tight">
-            Drive the Future.
-            <br />
-            <span className="bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-              Today.
+          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-[1.1] tracking-tight">
+            Shivshakti{" "}
+            <span className="bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent drop-shadow-[0_0_8px_rgba(249,115,22,0.6)]">
+              Auto Rentals
             </span>
           </h1>
 
-          <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10">
-            Ultra-premium vehicles. Instant booking. Zero hassle.
-            Experience driving like never before.
+          <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+            Affordable. Reliable. Trusted car & bike rentals in Vadodara.
+            Book instantly and drive stress-free.
           </p>
 
-          {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/vehicles"
-              className="bg-white text-black px-10 py-4 rounded-full font-semibold hover:scale-105 hover:shadow-2xl transition-all duration-300"
+              className="bg-orange-500 text-white px-10 py-4 rounded-full font-semibold hover:bg-orange-600 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/30 transition-all duration-300"
             >
               Explore Vehicles
             </Link>
 
             <Link
               to="/vehicles"
-              className="border border-white px-10 py-4 rounded-full font-semibold hover:bg-white hover:text-black transition-all duration-300"
+              className="border border-orange-500 text-orange-500 px-10 py-4 rounded-full font-semibold hover:bg-orange-500 hover:text-white transition-all duration-300"
             >
               Book Now
             </Link>
           </div>
         </div>
 
-        {/* Scroll Indicator */}
+        {/* Scroll Indicator (KEPT)
         <div className="absolute bottom-8 flex flex-col items-center gap-2 animate-bounce text-gray-400 opacity-70">
           <span className="text-sm">Scroll</span>
           <div className="w-5 h-9 border border-gray-400 rounded-full flex justify-center">
             <div className="w-1 h-2 bg-gray-400 rounded-full mt-2" />
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* ================= HOW IT WORKS ================= */}
@@ -81,12 +79,12 @@ export default function Home() {
                   key={i}
                   className="bg-white/5 backdrop-blur-xl p-10 rounded-3xl border border-white/10 hover:bg-white/10 transition-all duration-300 hover:-translate-y-2"
                 >
-                  <div className="text-5xl font-bold text-white/20 mb-4">
+                  <div className="text-5xl font-bold text-orange-500/20 mb-4">
                     {i + 1}
                   </div>
                   <h3 className="text-xl font-semibold mb-3">{step}</h3>
                   <p className="text-gray-400 text-sm">
-                    Fast, seamless and designed for maximum comfort.
+                    Simple process. No hidden charges. Instant confirmation.
                   </p>
                 </div>
               )
@@ -117,7 +115,7 @@ export default function Home() {
           <div className="text-center mt-16">
             <Link
               to="/vehicles"
-              className="bg-white text-black px-10 py-4 rounded-full font-semibold hover:scale-105 hover:shadow-2xl transition-all duration-300"
+              className="bg-orange-500 text-white px-10 py-4 rounded-full font-semibold hover:bg-orange-600 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/30 transition-all duration-300"
             >
               View All Vehicles
             </Link>
@@ -149,7 +147,9 @@ export default function Home() {
                 className="bg-white/5 backdrop-blur-xl p-10 rounded-3xl border border-white/10 hover:bg-white/10 transition-all duration-300 hover:-translate-y-2"
               >
                 <p className="text-gray-300 italic">“{r.text}”</p>
-                <h4 className="mt-6 font-semibold">— {r.name}</h4>
+                <h4 className="mt-6 font-semibold text-orange-500">
+                  — {r.name}
+                </h4>
               </div>
             ))}
           </div>
@@ -170,12 +170,13 @@ export default function Home() {
 
           <Link
             to="/vehicles"
-            className="bg-white text-black px-12 py-5 rounded-full font-semibold text-lg hover:scale-105 hover:shadow-2xl transition-all duration-300"
+            className="bg-orange-500 text-white px-12 py-5 rounded-full font-semibold text-lg hover:bg-orange-600 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/30 transition-all duration-300"
           >
             Start Booking
           </Link>
         </div>
       </section>
+
     </div>
   );
 }

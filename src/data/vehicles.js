@@ -1,171 +1,222 @@
 const vehicles = [
+  // ================= BUDGET CARS =================
   {
     id: 1,
     slug: "maruti-swift",
     name: "Maruti Swift",
-    description:
-      "A reliable and fuel-efficient hatchback, perfect for city drives and short trips.",
-    pricePerDay: 1200,
-    securityDeposit: 3000,
     type: "Car",
+    category: "Budget",
+    pricePerDay: 1500,
+    image: "",
     fuel: "Petrol",
     transmission: "Manual",
     seats: 5,
-    luggage: "2 Bags",
-    rating: 4.5,
-    isAvailable: true,
-    location: "Nashik",
-    images: [
-      "https://upload.wikimedia.org/wikipedia/commons/8/8e/2018_Suzuki_Swift_SZ5_SHVS_Boosterjet_1.0_Front.jpg"
-    ],
-  },
+    vehicleNumber:"GJ-06-AB-4521",
 
+  },
   {
     id: 2,
-    slug: "honda-activa",
-    name: "Honda Activa",
-    description:
-      "Smooth automatic scooter ideal for daily commuting and quick errands.",
-    pricePerDay: 400,
-    securityDeposit: 1000,
-    type: "Bike",
+    slug: "hyundai-i20",
+    name: "Hyundai i20",
+    type: "Car",
+    category: "Budget",
+    pricePerDay: 1800,
+    image: "",
     fuel: "Petrol",
-    transmission: "Automatic",
-    seats: 2,
-    luggage: "1 Small Bag",
-    rating: 4.3,
-    isAvailable: true,
-    location: "Nashik",
-    images: [
-      "https://upload.wikimedia.org/wikipedia/commons/0/0b/Honda_Activa_6G.jpg"
-    ],
+    transmission: "Manual",
+    seats: 5,
+    vehicleNumber: "GJ-18-CD-7890"
   },
-
   {
     id: 3,
-    slug: "hyundai-creta",
-    name: "Hyundai Creta",
-    description:
-      "Spacious SUV with premium comfort, ideal for family trips and long drives.",
-    pricePerDay: 2200,
-    securityDeposit: 5000,
+    slug: "tata-altroz",
+    name: "Tata Altroz",
     type: "Car",
-    fuel: "Diesel",
-    transmission: "Automatic",
+    category: "Budget",
+    pricePerDay: 1600,
+    image: "",
+    fuel: "Petrol",
+    transmission: "Manual",
     seats: 5,
-    luggage: "4 Bags",
-    rating: 4.7,
-    isAvailable: true,
-    location: "Nashik",
-    images: [
-      "https://upload.wikimedia.org/wikipedia/commons/9/9e/2020_Hyundai_Creta.jpg"
-    ],
+    vehicleNumber: "GJ-05-EF-1234"
   },
-
   {
     id: 4,
-    slug: "tata-nexon",
-    name: "Tata Nexon",
-    description:
-      "Compact SUV with strong safety features and excellent ride quality.",
-    pricePerDay: 1800,
-    securityDeposit: 4000,
+    slug: "maruti-ertiga",
+    name: "Maruti Ertiga",
     type: "Car",
+    category: "Budget",
+    pricePerDay: 2200,
+    image: "",
     fuel: "Petrol",
     transmission: "Manual",
-    seats: 5,
-    luggage: "3 Bags",
-    rating: 4.6,
-    isAvailable: true,
-    location: "Nashik",
-    images: [
-      "https://upload.wikimedia.org/wikipedia/commons/2/2d/Tata_Nexon_Facelift.jpg"
-    ],
+    seats: 7,
+    vehicleNumber: "GJ-01-GH-5678"
   },
 
+  // ================= SUVs =================
   {
     id: 5,
-    slug: "royal-enfield-classic-350",
-    name: "Royal Enfield Classic 350",
-    description:
-      "Powerful cruiser bike, perfect for highway rides and touring.",
-    pricePerDay: 900,
-    securityDeposit: 2500,
-    type: "Bike",
-    fuel: "Petrol",
-    transmission: "Manual",
-    seats: 2,
-    luggage: "1 Saddle Bag",
-    rating: 4.8,
-    isAvailable: true,
-    location: "Nashik",
-    images: [
-      "https://upload.wikimedia.org/wikipedia/commons/6/6a/Royal_Enfield_Classic_350.jpg"
-    ],
-  },
-
-  {
-    id: 6,
-    slug: "suzuki-access-125",
-    name: "Suzuki Access 125",
-    description:
-      "Lightweight scooter with great mileage and comfortable ride.",
-    pricePerDay: 450,
-    securityDeposit: 1200,
-    type: "Bike",
+    slug: "hyundai-creta",
+    name: "Hyundai Creta",
+    type: "SUV",
+    category: "Premium",
+    pricePerDay: 3000,
+    image: "",
     fuel: "Petrol",
     transmission: "Automatic",
-    seats: 2,
-    luggage: "1 Small Bag",
-    rating: 4.2,
-    isAvailable: true,
-    location: "Nashik",
-    images: [
-      "https://upload.wikimedia.org/wikipedia/commons/5/5e/Suzuki_Access_125.jpg"
-    ],
+    seats: 5,
+    vehicleNumber:"GJ-17-IJ-9012"
   },
-
+  {
+    id: 6,
+    slug: "kia-seltos",
+    name: "Kia Seltos",
+    type: "SUV",
+    category: "Premium",
+    pricePerDay: 3200,
+    image: "",
+    fuel: "Petrol",
+    transmission: "Automatic",
+    seats: 5,
+    vehicleNumber: "GJ-03-KL-3456"
+  },
   {
     id: 7,
-    slug: "mahindra-thar",
-    name: "Mahindra Thar",
-    description:
-      "Rugged off-road SUV built for adventure and rough terrains.",
-    pricePerDay: 3000,
-    securityDeposit: 7000,
-    type: "Car",
-    fuel: "Diesel",
-    transmission: "Manual",
-    seats: 4,
-    luggage: "2 Bags",
-    rating: 4.9,
-    isAvailable: true,
-    location: "Nashik",
-    images: [
-      "https://upload.wikimedia.org/wikipedia/commons/e/e0/Mahindra_Thar_2020.jpg"
-    ],
-  },
-
-  {
-    id: 8,
-    slug: "toyota-innova",
-    name: "Toyota Innova Crysta",
-    description:
-      "Large MPV with superior comfort, perfect for group travel.",
-    pricePerDay: 2800,
-    securityDeposit: 6000,
-    type: "Car",
+    slug: "mahindra-scorpio",
+    name: "Mahindra Scorpio",
+    type: "SUV",
+    category: "Premium",
+    pricePerDay: 3500,
+    image: "",
     fuel: "Diesel",
     transmission: "Manual",
     seats: 7,
-    luggage: "5 Bags",
-    rating: 4.8,
-    isAvailable: true,
-    location: "Nashik",
-    images: [
-      "https://upload.wikimedia.org/wikipedia/commons/3/3b/Toyota_Innova_Crysta.jpg"
-    ],
+    vehicleNumber: "GJ-12-MN-7890"
   },
+  {
+    id: 8,
+    slug: "toyota-fortuner",
+    name: "Toyota Fortuner",
+    type: "SUV",
+    category: "Luxury",
+    pricePerDay: 6000,
+    image: "",
+    fuel: "Diesel",
+    transmission: "Automatic",
+    seats: 7,
+    vehicleNumber: "GJ-08-OP-1234"
+  },
+
+  // ================= PREMIUM SEDANS =================
+  {
+    id: 9,
+    slug: "honda-city",
+    name: "Honda City",
+    type: "Car",
+    category: "Premium",
+    pricePerDay: 2500,
+    image: "",
+    fuel: "Petrol",
+    transmission: "Automatic",
+    seats: 5,
+    vehicleNumber: "GJ-14-QR-5678"
+  },
+  {
+    id: 10,
+    slug: "skoda-slavia",
+    name: "Skoda Slavia",
+    type: "Car",
+    category: "Premium",
+    pricePerDay: 2700,
+    image: "",
+    fuel: "Petrol",
+    transmission: "Automatic",
+    seats: 5,
+    vehicleNumber: "GJ-09-ST-9012"
+  },
+
+  // ================= LUXURY =================
+  {
+    id: 11,
+    slug: "bmw-3-series",
+    name: "BMW 3 Series",
+    type: "Car",
+    category: "Luxury",
+    pricePerDay: 8000,
+    image: "",
+    fuel: "Petrol",
+    transmission: "Automatic",
+    seats: 5,
+    vehicleNumber:"GJ-02-UV-3456"
+  },
+  {
+    id: 12,
+    slug: "audi-a6",
+    name: "Audi A6",
+    type: "Car",
+    category: "Luxury",
+    pricePerDay: 8500,
+    image: "",
+    fuel: "Petrol",
+    transmission: "Automatic",
+    seats: 5,
+    vehicleNumber: "GJ-16-WX-7890"
+  },
+
+  // ================= BIKES =================
+  {
+    id: 13,
+    slug: "honda-activa-6g",
+    name: "Honda Activa 6G",
+    type: "Bike",
+    category: "Budget",
+    pricePerDay: 500,
+    image: "",
+    fuel: "Petrol",
+    transmission: "Automatic",
+    seats: 2,
+    vehicleNumber: "GJ-11-YZ-1234"
+  },
+  {
+    id: 14,
+    slug: "royal-enfield-classic-350",
+    name: "Royal Enfield Classic 350",
+    type: "Bike",
+    category: "Premium",
+    pricePerDay: 1200,
+    image: "",
+    fuel: "Petrol",
+    transmission: "Manual",
+    seats: 2,
+    vehicleNumber: "GJ-07-AB-5678"
+  },
+  {
+    id: 15,
+    slug: "ktm-duke-200",
+    name: "KTM Duke 200",
+    type: "Bike",
+    category: "Premium",
+    pricePerDay: 1000,
+    image: "",
+    fuel: "Petrol",
+    transmission: "Manual",
+    seats: 2,
+    vehicleNumber: "GJ-13-CD-9012"
+  },
+  {
+    id: 16,
+    slug: "yamaha-r15",
+    name: "Yamaha R15",
+    type: "Bike",
+    category: "Premium",
+    pricePerDay: 1100,
+    image: "",
+    fuel: "Petrol",
+    transmission: "Manual",
+    seats: 2,
+    vehicleNumber: "GJ-04-EF-3456"
+  }
 ];
 
 export default vehicles;

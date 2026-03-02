@@ -10,7 +10,9 @@ function Navbar() {
 
   const linkClasses = (path) =>
     `relative group transition-colors duration-300 ${
-      isActive(path) ? "text-white" : "text-gray-300 hover:text-white"
+      isActive(path)
+        ? "text-orange-500"
+        : "text-gray-300 hover:text-orange-400"
     }`;
 
   return (
@@ -23,32 +25,35 @@ function Navbar() {
         {/* Logo */}
         <Link
           to="/"
-          className="text-2xl font-extrabold tracking-wide bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300"
+          className="text-2xl font-extrabold tracking-wide bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300"
         >
-          RideNow
+          SHIVSHAKTI
+          <p className="text-xs text-gray-400 -mt-1 text-center">
+            Auto Rentals
+          </p>
         </Link>
-
+        
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-10 text-sm font-medium">
           <Link to="/" className={linkClasses("/")}>
             Home
-            <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
           </Link>
 
           <Link to="/vehicles" className={linkClasses("/vehicles")}>
             Vehicles
-            <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
           </Link>
 
           <Link to="/login" className={linkClasses("/login")}>
             Login
-            <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
           </Link>
         </div>
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-white"
+          className="md:hidden text-orange-500"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle Menu"
         >
@@ -58,14 +63,26 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-black/90 backdrop-blur-lg border-t border-white/10 px-6 py-6 space-y-6 text-center">
-          <Link to="/" className="block hover:text-gray-400" onClick={() => setIsOpen(false)}>
+        <div className="md:hidden bg-black/95 backdrop-blur-lg border-t border-white/10 px-6 py-6 space-y-6 text-center">
+          <Link
+            to="/"
+            className="block text-gray-300 hover:text-orange-400 transition-colors"
+            onClick={() => setIsOpen(false)}
+          >
             Home
           </Link>
-          <Link to="/vehicles" className="block hover:text-gray-400" onClick={() => setIsOpen(false)}>
+          <Link
+            to="/vehicles"
+            className="block text-gray-300 hover:text-orange-400 transition-colors"
+            onClick={() => setIsOpen(false)}
+          >
             Vehicles
           </Link>
-          <Link to="/login" className="block hover:text-gray-400" onClick={() => setIsOpen(false)}>
+          <Link
+            to="/login"
+            className="block text-gray-300 hover:text-orange-400 transition-colors"
+            onClick={() => setIsOpen(false)}
+          >
             Login
           </Link>
         </div>

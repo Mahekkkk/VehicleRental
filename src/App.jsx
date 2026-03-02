@@ -8,6 +8,9 @@ import Vehicles from "./pages/Vehicles";
 import VehicleDetails from "./pages/VehicleDetails";
 import Booking from "./pages/Booking";
 import Login from "./pages/Login";
+import BookingSuccess from "./pages/BookingSuccess";
+
+
 
 function App() {
   return (
@@ -22,6 +25,7 @@ function App() {
             <Route path="/booking/:slug" element={<Booking />} />
           </Route>
           <Route path="/login" element={<Login />} />
+          <Route path="/booking-success" element={<BookingSuccess />} />
         </Routes>
       </Suspense>
     </>
