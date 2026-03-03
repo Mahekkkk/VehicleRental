@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Login() {
+function Signup() {
   return (
     <div className="min-h-screen bg-black flex items-center justify-center px-6 relative overflow-hidden">
 
@@ -12,10 +12,19 @@ function Login() {
         <h1 className="text-4xl font-extrabold text-center mb-8 
                bg-gradient-to-r from-orange-400 to-orange-600 
                bg-clip-text text-transparent">
-          Login
+          Create Account
         </h1>
 
         <form className="space-y-6">
+
+          <div>
+            <label className="text-gray-400 text-sm">Full Name</label>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              className="w-full mt-2 px-4 py-3 rounded-xl bg-black border border-white/10 text-white focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
+            />
+          </div>
 
           <div>
             <label className="text-gray-400 text-sm">Email</label>
@@ -30,7 +39,7 @@ function Login() {
             <label className="text-gray-400 text-sm">Password</label>
             <input
               type="password"
-              placeholder="Enter your password"
+              placeholder="Create a password"
               className="w-full mt-2 px-4 py-3 rounded-xl bg-black border border-white/10 text-white focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
             />
           </div>
@@ -39,15 +48,15 @@ function Login() {
             type="submit"
             className="w-full bg-orange-500 py-3 rounded-full font-semibold hover:bg-orange-600 hover:scale-105 transition-all duration-300 shadow-lg shadow-orange-500/30"
           >
-            Login
+            Sign Up
           </button>
 
         </form>
 
         <p className="text-gray-400 text-sm text-center mt-6">
-          Don’t have an account?{" "}
-          <Link to="/signup" className="text-orange-500 hover:underline">
-            Sign Up
+          Already have an account?{" "}
+          <Link to="/login" className="text-orange-500 hover:underline">
+            Login
           </Link>
         </p>
 
@@ -56,4 +65,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Signup;

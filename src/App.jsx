@@ -9,6 +9,7 @@ import VehicleDetails from "./pages/VehicleDetails";
 import Booking from "./pages/Booking";
 import Login from "./pages/Login";
 import BookingSuccess from "./pages/BookingSuccess";
+import Signup from "./pages/Signup";
 
 
 
@@ -25,6 +26,7 @@ function App() {
             <Route path="/booking/:slug" element={<Booking />} />
           </Route>
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
           <Route path="/booking-success" element={<BookingSuccess />} />
         </Routes>
       </Suspense>

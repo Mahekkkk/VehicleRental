@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "../assets/logo.jpeg";
+import logo from "../assets/logo.png";
 
 function Navbar() {
   const location = useLocation();
@@ -17,23 +17,22 @@ function Navbar() {
     }`;
 
   return (
-    <nav
-      className="fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-black/60 border-b border-white/10"
-      aria-label="Main Navigation"
+    <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-black/70 border-b border-white/10">
+
+  <div className="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center">
+
+    <Link
+      to="/"
+      className="flex items-center hover:scale-105 transition-transform duration-300"
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        
-        {/* Logo */}
-        <Link
-  to="/"
-  className="flex items-center hover:scale-105 transition-transform duration-300"
->
-<img
-  src={logo}
-  alt="ShivShakti Auto Rentals"
-  className="h-16 md:h-20 w-auto object-contain p-2 rounded-lg"
-/>
-</Link>
+      <div className="h-14 md:h-16 overflow-hidden">
+  <img
+    src={logo}
+    alt="ShivShakti Auto Rentals"
+    className="h-full w-auto object-contain scale-125"
+  />
+</div>
+    </Link>
         
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-10 text-sm font-medium">
