@@ -13,10 +13,10 @@ export default function Home() {
 
         {/* Background Image */}
         <img
-          src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=2070&auto=format&fit=crop"
-          alt="Luxury car"
-          className="absolute inset-0 w-full h-full object-cover scale-105 opacity-80"
-        />
+  src="https://images.unsplash.com/photo-1616422285623-13ff0162193c?q=80&w=2070&auto=format&fit=crop"
+  alt="Luxury car"
+  className="absolute inset-0 w-full h-full object-cover scale-105 opacity-80"
+/>
 
         {/* Cinematic Overlays */}
         <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-90" />

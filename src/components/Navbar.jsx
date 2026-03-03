@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "../assets/logo.jpeg";
 
 function Navbar() {
   const location = useLocation();
@@ -24,14 +25,15 @@ function Navbar() {
         
         {/* Logo */}
         <Link
-          to="/"
-          className="text-2xl font-extrabold tracking-wide bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300"
-        >
-          SHIVSHAKTI
-          <p className="text-xs text-gray-400 -mt-1 text-center">
-            Auto Rentals
-          </p>
-        </Link>
+  to="/"
+  className="flex items-center hover:scale-105 transition-transform duration-300"
+>
+<img
+  src={logo}
+  alt="ShivShakti Auto Rentals"
+  className="h-16 md:h-20 w-auto object-contain p-2 rounded-lg"
+/>
+</Link>
         
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-10 text-sm font-medium">
